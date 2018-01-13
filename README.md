@@ -5,10 +5,10 @@
 * A사진과 B사진을 학습하여 최대한 비슷하게 만들어주는 신경망으로 학습하고 이를 실제 영상 프레임에 적용하고 프레임을 모두 영상으로 이어준다면 DeepFake가 되는 것이다.
 ## 2. 실행하기에 앞서..  
 * 위에서 A사진과 B사진이라고 이야기했는데 사실 영상은 사진들의 조합이다. 그렇다. 영상을 모두 사진으로 분리해준다면 두 영상으로 학습하여 A영상 속의 얼굴을 B영상 속의 얼굴로 바꿔치기 할 수 있다는 것이다.
-* DeepFake는 GPU(그래픽카드)가 필요하다. 없다면 상당한 시간이 소요된다. 그냥 못한다고 보는게 편하다. 그리고 좋은 GPU일 수록 좋은데, 컴퓨터에 CUDA 8.0 이 설치되어야 한다. 설치는 [여기서](https://developer.nvidia.com/cuda-80-ga2-download-archive).
+* DeepFake는 GPU(그래픽카드)가 필요하다. 없다면 상당한 시간이 소요된다. 그냥 못한다고 보는게 편하다. 그리고 좋은 GPU일 수록 좋고, 컴퓨터에 CUDA 8.0  설치해야한다. 설치는 [여기서](https://developer.nvidia.com/cuda-80-ga2-download-archive).
 * 필요한 것은 두 영상과 DeepFakeApp 소스파일이다. 두 영상은 알아서 구하도록하고 DeepFakeApp은 [여기서](https://shorturl.at/pyIO6) 받을 수 있다.(2018/01/13 다운로드 가능)
 * 그리고 영상을 사진으로 나눠주기 위해 FFMPEG가 필요하다. [다운로드](https://www.ffmpeg.org/download.html) 를 받고 **환경변수를 설정**해야하는데 하기 귀찮으니까 그냥 다운받은거 한폴더에 다 풀어주도록 하자.
-~~* 그리고 아마 어떤 에러가 뜰 것인데 그것도 바로 해결해주기 위해 [이것]() 도 다운받자~~(1.1버전에서 해결)
+* ~~그리고 아마 어떤 에러가 뜰 것인데 그것도 바로 해결해주기 위해 [이것]() 도 다운받자~~(1.1버전에서 해결)
 * DeepFakeApp의 레딧은 [여기](https://www.reddit.com/r/deepfakes/comments/7ox5vn/fakeapp_a_desktop_tool_for_creating_deepfakes/)
 ## 3. 영상을 사진으로 분리
 * 이제 영상을 분리해서 사진으로 만들어줘야 하는데 앞서 언급한대로 FFMPEG를 사용할 것이다.
